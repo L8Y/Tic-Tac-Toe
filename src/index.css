@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+:root {
+    --primary-mass:#E3CD81;
+    --square-cool: #B1B3B3;
+    --random-gray:gray;
+    --text-black:black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-color: var(--primary-mass);
+    display: flex;
+    justify-content: center; 
+    margin-top: 6rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.square {
+    height: 6rem;
+    width: 6rem;
+    background-color: var(--square-cool); 
+    border: 1px solid var(--primary-mass); 
+    float: left;                                                                                                        
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-mass);
+    box-shadow: 10px  10px var(--random-gray);
+  }
+
+h1 {
+    color: var(--random-gray);
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+h2 {
+    color: var(--random-gray);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.button{
+    background-color: var(--random-gray);
+    color: var(--primary-mass);
+    margin-left: 5rem;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    border-color: var(--square-cool);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: var(--square-cool);
+    color: var(--text-black);
+}
+
+.button:active {
+    transform: translateY(6px);
 }
